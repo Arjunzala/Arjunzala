@@ -71,7 +71,7 @@ github action
   with
     # github user name to read the contribution graph from (**required**)
     # using action context var `github.repository_owner` or specified user
-    github_user_name: ${{ github.repository_owner }}
+    github_user_name: ${{ github.Arjunzala }}
 
     # list of files to generate.
     # one file per line. Each output can be customized with options as query string.
@@ -101,7 +101,7 @@ I've added the full code snippet below and added plenty of comments to (hopefull
 
 You can copy this code straight into a blank *.yml file. Make sure you create a new *.yml file under the following directory:
 
-YOUR_GITHUB_USERNAME --> .github --> workflows --> FILE_NAME.yml
+Arjunzala --> .github --> workflows --> main.yml
 
 # GitHub Action for generating a contribution graph with a snake eating your contributions.
 
@@ -177,11 +177,11 @@ CodeOutput
 Step 4. Adding a contribution-eating snake to your profile
 Now the final set is to add this to your profile. Grab the file location of your *.gif. It should be something like:
 
-https://github.com/YOUR_USERNAME/YOUR_USERNAME/blob/output/github-contribution-grid-snake.gif
+https://github.com/Arjunzala/Arjunzala/blob/output/github-contribution-grid-snake.gif
 
 Add this to your profile by copying the file location onto a new line in your markdown file:
 
-![snake gif](https://github.com/YOUR_USERNAME/YOUR_USERNAME/blob/output/github-contribution-grid-snake.gif)
+![snake gif](https://github.com/Arjunzala/Arjunzala/blob/output/github-contribution-grid-snake.gif)
 
 Now you should have a really cool looking snake eating your contributions!
 
@@ -614,7 +614,7 @@ jobs:
       - uses: Platane/snk@master
         id: snake-gif
         with:
-          github_user_name: mishmanners
+          github_user_name: Arjunzala
           # these next 2 lines generate the files on a branch called "output". This keeps the main branch from cluttering up.
           gif_out_path: dist/github-contribution-grid-snake.gif
           svg_out_path: dist/github-contribution-grid-snake.svg
